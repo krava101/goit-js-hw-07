@@ -19,6 +19,10 @@ ul{
   margin: 0;
 }
 
+button{
+  cursor: pointer;
+}
+
 .main-list a, .back-link{
   color: #2E2F42;
   font-size: 24px;

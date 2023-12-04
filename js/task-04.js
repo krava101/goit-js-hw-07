@@ -5,7 +5,7 @@ const handleSubmit = (event) => {
     const userEmail = form.elements.email;
     const userPassword = form.elements.password;
     const withOutSpace = e => e.replace(/\s/g, "");
-    if (withOutSpace(userEmail.value) === "" && withOutSpace(userPassword.value) === "") {
+    if (withOutSpace(userEmail.value) === "" || withOutSpace(userPassword.value) === "") {
         alert('All form fields must be filled in');
     } else {
         user.email = withOutSpace(userEmail.value);
